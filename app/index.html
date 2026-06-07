@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eid Celebration</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Floating Eid Items -->
+
+  <div class="floating-items">
+
+    <div class="item sheep">🐑</div>
+    <div class="item meat">🍖</div>
+    <div class="item food">🍚</div>
+    <div class="item cow">🐄</div>
+    <div class="item sheep2">🐏</div>
+    <div class="item meat2">🥩</div>
+
+  </div>
+
+  <!-- Main Card -->
+
+  <div class="card">
+
+    <div class="moon">🌙</div>
+
+    <h1>Eid Celebration</h1>
+
+    <p class="subtitle">
+      Generate your developer Eid greeting 😭
+    </p>
+
+    <input
+      type="text"
+      id="nameInput"
+      placeholder="Enter your name..."
+    >
+
+    <button onclick="showGreeting()">
+      Generate Greeting 🎉
+    </button>
+
+    <div id="message"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

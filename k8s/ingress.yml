@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+
+kind: Ingress
+
+metadata:
+  name: eid-greeting-ingress
+
+spec:
+
+  rules:
+
+  - host: happyeid.com
+
+    http:
+
+      paths:
+
+      - path: /
+
+        pathType: Prefix
+
+        backend:
+
+          service:
+
+            name: eid-greeting-service
+
+            port:
+
+              number: 80

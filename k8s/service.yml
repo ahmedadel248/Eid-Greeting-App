@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: eid-greeting-service
+
+spec:
+  selector:
+    app: eid-greeting
+
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+  type: ClusterIP

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: eid-greeting-deployment
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: eid-greeting
+
+  template:
+    metadata:
+      labels:
+        app: eid-greeting
+
+    spec:
+      containers:
+
+      - name: eid-greeting-container
+
+        image: ahmedadell10/eid-app:v1
+
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 80
